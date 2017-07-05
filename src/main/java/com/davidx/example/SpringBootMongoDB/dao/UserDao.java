@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by xc on 17-7-5.
  */
-public interface UserDao extends MongoRepository<User, Long> {
+public interface UserDao extends MongoRepository<User, Long>,UserRepositoryCustom {
 
     //@Query("{'username'?0}")
     User findByUsername(String username);
